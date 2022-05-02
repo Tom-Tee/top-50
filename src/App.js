@@ -2,22 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [filter, filterSet] = React.useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div>
+        <header className="the-header">
+          <h1>THE TOP 50</h1>
+        </header>
+        <div className = "input-search">
+          <h3>SEARCH</h3>
+          <input type="text" />
+        </div>
+
+      <table>
+        <thead>
+          <tr>Artist</tr>
+          <tr>Song</tr>
+        </thead>
+      </table>
+
+      </div>
     </div>
   );
 }
